@@ -1,0 +1,46 @@
+.loginform{
+    margin-top: 3%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgba(60, 61, 62, 0.598);
+    padding: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+#email,#password,#showPassword{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#registerroute{
+    color: white;
+}
+
+#showbtn{
+    border-radius: 5px;
+    border: none;
+    padding:6px;
+    background-color: rgba(219, 212, 207, 0.863);
+    color: aliceblue;
+}
+
+#loginbtn,#backroute{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(239, 129, 55, 0.863);
+    color: aliceblue;
+}
+
+#loginbtn:hover,#backroute:hover{
+    background-color: rgba(232, 101, 13, 0.863);
+    padding: 12px;
+}

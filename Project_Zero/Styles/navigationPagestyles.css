@@ -1,0 +1,23 @@
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#register,#login,#about{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(245, 152, 91, 0.982);
+    color: aliceblue;
+    margin-right: 10px;
+}
+
+#register:hover,#login:hover,#about:hover{
+    background-color: rgba(232, 101, 13, 0.863);
+    padding: 12px;
+}

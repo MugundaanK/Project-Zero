@@ -1,0 +1,31 @@
+<div>
+    <div><a ng-href="#!/home" id="backroute">Back</a></div>
+    
+    <!-- registration form -->
+    <form name="registerform" class="registerform">
+        <label for="fname"> First Name : </label><input type="text" ng-model="fname" id="fname" required><br><br>
+        <label for="lname"> Last Name : </label><input type="text" ng-model="lname" id="lname" required><br><br>
+        <label for="email"> Email-id : </label><input type="email" ng-model="email" id="email"required><br><br> 
+        
+        <label for="password"> Password : </label>
+
+        <input type="password" ng-model="password" id="password" ng-show="!showPassword" required>
+        <input type="text" id="showPassword" ng-model="password" ng-show="showPassword">
+        
+        <button ng-model="showPassword" ng-click="passwordVisibility()" id="showbtn1">
+            <img src="../assets/eye_icon.png" style="height: 17px; width: 19px;">
+        </button><br><br>
+        
+        <label for="confirmpassword"> Confirm Password : </label>
+        
+        <input type="password" ng-model="confirmpassword" id="confirmpassword" ng-show="!showCpassword">
+        <input type="text" id="showCpassword" ng-model="confirmpassword" ng-show="showCpassword">
+        
+        <button ng-model="showCpassword" ng-click="confirmpasswordVisibility()" id="showbtn2">
+            <img src="../assets/eye_icon.png" style="height: 17px; width: 19px;">
+        </button><br><br>
+
+        <button ng-click="postData()" id="registerbtn">Register</button><br><br>
+        Already An Existing User <a ng-href="#!/login" id="loginroute"><u>Login</u></a>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <div><a ng-href="#!/home" id="backroute">Back</a></div>
+    <form class="loginform">
+        <label for="email">Email-id : </label><input type="text" id="email" ng-model="email" required><br><br>
+        <label for="password">Password : </label>
+        <input type="password" id="password" ng-model="password" ng-show="!showPassword" required>
+        <input type="text" id="showPassword" ng-model="password" ng-show="showPassword">
+        <button ng-model="showPassword" ng-click="passwordVisibility()" id="showbtn"><img src="../assets/eye_icon.png" style="height: 17px; width: 19px;"></button><br><br>
+        
+        <button ng-click="loginCheck()" id="loginbtn">Login</button><br><br>
+        Don't Have an Account <a ng-href="#!/register" id="registerroute"><u>Register</u></a>        
+    </form>
+        
+</div>

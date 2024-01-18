@@ -1,0 +1,16 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "fnmae": "Mugundaan",
+      "lname": "Kumar",
+      "email": "mugunth@gmail.com",
+      "password": "Mugunth@19",
+      "id": 2
+    }
+  ]
+}

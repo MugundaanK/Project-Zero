@@ -1,0 +1,29 @@
+<div ng-controller= "getDashdatacontrol">
+    <span id="useremail"> Welcome {{emailid}} ! </span>
+    <input type="text" ng-model="title" placeholder="Search..." id="searchbar">
+    <select ng-model="category"id="dropdown" ng-click="">
+        <option  value ="" selected>All</option>
+        <option value="smartphone">Smart Phone</option>
+        <option value="laptops">Laptops</option>
+        <option value="fragrances">Fragrences</option>
+        <option value="skincare">Skin Care</option>
+        <option value="groceries">Groceries</option>
+    </select>
+    <button id="sortl" ng-click="sortbylow()">Sort by Price Low To High</button>
+    <button id="sorth" ng-click="sortbyhigh()">Sort by Price High To High</button>
+    <button ng-click="logout()" id="logout">Logout</button><br><br>
+
+    <div>
+        <div class="gridcontent">
+            <li ng-repeat="product in dashdata | filter: title | filter: category | orderBy: value" type="none">    
+                <div class="cardDetail">
+                    <img src="{{product.thumbnail}}" style="width: 300px; height: 200px; border-radius: 15px;">
+                    <p> {{product.title}}</p>
+                    <p>{{product.price | currency:'$'}} </p>
+                    <p> {{product.description}} </p>    
+                    <p> {{product.rating}} </p>        
+                </div>
+            </li>
+        </div>
+    </div>
+</div>
